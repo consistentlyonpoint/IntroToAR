@@ -904,7 +904,7 @@ def video_frame_generator(filename):
     Returns:
         None.
     """
-    # Todo: Open file with VideoCapture and set result to 'video'. Replace None
+    #
     video = cv2.VideoCapture(filename)
     # video = None
 
@@ -917,7 +917,7 @@ def video_frame_generator(filename):
         else:
             break
 
-    # Todo: Close video (release) and yield a 'None' value. (add 2 lines)
+    #
     video.release()
     #raise NotImplementedError
     yield None

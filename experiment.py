@@ -338,7 +338,7 @@ def part_6():
     #
     out_path = "my-{}{}".format(output_prefix, '.mp4')
     video_out = mp4_video_writer(out_path, (their_w, their_h), fps)
-    # Todo: Complete this part on your own.
+
     output_counter = 1
     frame_num = 1
     while their_image is not None:
