@@ -16,44 +16,40 @@ Corner detection; Perspective imaging; Projective geometry, Homographies, and Im
 ### Problem 1: Marker detection in a simulated scene
 Identify markers for Augmented Reality exercise
 <figure style="text-align: center">
-    <b>ps2-1-a-1</b><br><img src="output/ps2-1-a-1.png" width="250" alt="ps2-1-a-1">
-    <figcaption><b>Traffic Light (center) Coordinates and active light: (135, 120), 'green'</b></figcaption>
+    <b>ps3-1-a-1</b><br><img src="output/ps3-1-a-1.png" width="250" alt="ps3-1-a-1">
+    <figcaption><b>AR Coordinates</b></figcaption>
 </figure>
 <figure style="text-align: center">
-    <b>ps2-1-a-2</b><br><img src="output/ps2-1-a-2.png" width="250" alt="ps2-1-a-2">
-    <figcaption><b>Traffic Light (center) Coordinates and active light: (437, 249), 'green'</b></figcaption>
+    <b>ps3-1-a-2</b><br><img src="output/ps3-1-a-2.png" width="250" alt="ps3-1-a-2">
+    <figcaption><b>AR Coordinates_2</b></figcaption>
 </figure>
 <figure style="text-align: center">
-    <b>ps2-1-a-3</b><br><img src="output/ps2-1-a-3.png" width="250" alt="ps2-1-a-3">
-    <figcaption><b>Traffic Light (center) Coordinates and active light: (130, 381), 'yellow'</b></figcaption>
-</figure>
-<figure style="text-align: center">
-    <b>ps2-1-a-4</b><br><img src="output/ps2-1-a-4.png" width="250" alt="ps2-1-a-4">
-    <figcaption><b>Traffic Light (center) Coordinates and active light: (630, 480), 'red'</b></figcaption>
+    <b>ps3-1-a-3</b><br><img src="output/ps3-1-a-3.png" width="250" alt="ps3-1-a-3">
+    <figcaption><b>AR Coordinates - noisy</b></figcaption>
 </figure>
 
 ---
 ### Problem 2: Marker detection in a real scene
 Identify markers in simulates scenes.
 <figure style="text-align: center">
-    <b>ps2-2-a-1</b><br><img src="output/ps2-2-a-1.png" width="250" alt="ps2-2-a-1">
-    <figcaption><b>Coordinates and Traffic Sign: (245, 345), 'no entry'</b></figcaption>
+    <b>ps3-2-a-1</b><br><img src="output/ps3-2-a-1.png" width="250" alt="ps3-2-a-1">
+    <figcaption><b>Marker Detection - Real Scene_1</b></figcaption>
 </figure>
 <figure style="text-align: center">
-    <b>ps2-2-a-2</b><br><img src="output/ps2-2-a-2.png" width="250" alt="ps2-2-a-2">
-    <figcaption><b>Coordinates and Traffic Sign: (549, 247), 'stop'</b></figcaption>
+    <b>ps3-2-a-2</b><br><img src="output/ps3-2-a-2.png" width="250" alt="ps3-2-a-2">
+    <figcaption><b>Marker Detection - Real Scene_2</b></figcaption>
 </figure>
 <figure style="text-align: center">
-    <b>ps2-2-a-3</b><br><img src="output/ps2-2-a-3.png" width="250" alt="ps2-2-a-3">
-    <figcaption><b>Coordinates and Traffic Sign: (250, 400), 'construction'</b></figcaption>
+    <b>ps3-2-a-3</b><br><img src="output/ps3-2-a-3.png" width="250" alt="ps3-2-a-3">
+    <figcaption><b>Marker Detection - Real Scene_3</b></figcaption>
 </figure>
 <figure style="text-align: center">
-    <b>ps2-2-a-4</b><br><img src="output/ps2-2-a-4.png" width="250" alt="ps2-2-a-4">
-    <figcaption><b>Coordinates and Traffic Sign: (750, 350), 'warning'</b></figcaption>
+    <b>ps3-2-a-4</b><br><img src="output/ps3-2-a-4.png" width="250" alt="ps3-2-a-4">
+    <figcaption><b>Marker Detection - Real Scene_4</b></figcaption>
 </figure>
 <figure style="text-align: center">
-    <b>ps2-2-a-5</b><br><img src="output/ps2-2-a-5.png" width="250" alt="ps2-2-a-5">
-    <figcaption><b>Coordinates and Traffic Sign: (307, 182), 'yield'</b></figcaption>
+    <b>ps3-2-a-5</b><br><img src="output/ps3-2-a-5.png" width="250" alt="ps3-2-a-5">
+    <figcaption><b>Marker Detection - Real Scene_5</b></figcaption>
 </figure>
 
 ---
@@ -72,23 +68,27 @@ I tried the techniques of inversing the homography and mapping from the destinat
 
 Add the marketing image to background image. Match the marketing image to the background image's AR points.
 <figure style="text-align: center">
-    <b>ps2-3-a-1</b><br><img src="output/ps2-3-a-1.png" width="250" alt="ps2-3-a-1">
-    <figcaption><b>Traffic Signs: 'no entry', 'stop', 'construction'</b></figcaption>
+    <b>ps3-3-a-1</b><br><img src="output/ps3-3-a-1.png" width="250" alt="ps3-3-a-1">
+    <figcaption><b>Norman Borlaug_1</b></figcaption>
 </figure>
 <figure style="text-align: center">
-    <b>ps2-3-a-2</b><br><img src="output/ps2-3-a-2.png" width="250" alt="ps2-3-a-2">
-    <figcaption><b>Traffic Sign: 'traffic', 'no entry', 'stop', 'yield', 'construction', 'warning'</b></figcaption>
+    <b>ps3-3-a-2</b><br><img src="output/ps3-3-a-2.png" width="250" alt="ps3-3-a-2">
+    <figcaption><b>Norman Borlaug_2</b></figcaption>
+</figure>
+<figure style="text-align: center">
+    <b>ps3-3-a-3</b><br><img src="output/ps3-3-a-3.png" width="250" alt="ps3-3-a-3">
+    <figcaption><b>Norman Borlaug_3</b></figcaption>
 </figure>
 
 ---
 ### Problem 4: Finding markers in a video
 Identify AR markers in the frames of videos.
 <figure style="text-align: center">
-    <b>ps2-3-a-1</b><br><img src="output/ps2-3-a-1.png" width="250" alt="ps2-3-a-1">
+    <b>ps3-3-a-1</b><br><img src="output/ps3-3-a-1.png" width="250" alt="ps3-3-a-1">
     <figcaption><b>Traffic Signs: 'no entry', 'stop', 'construction'</b></figcaption>
 </figure>
 <figure style="text-align: center">
-    <b>ps2-3-a-2</b><br><img src="output/ps2-3-a-2.png" width="250" alt="ps2-3-a-2">
+    <b>ps3-3-a-2</b><br><img src="output/ps3-3-a-2.png" width="250" alt="ps3-3-a-2">
     <figcaption><b>Traffic Sign: 'traffic', 'no entry', 'stop', 'yield', 'construction', 'warning'</b></figcaption>
 </figure>
 
@@ -96,11 +96,11 @@ Identify AR markers in the frames of videos.
 ### Problem 5: Final Augmented Reality
 Adding an image to background video's frames. Match the image to the background video's AR points.
 <figure style="text-align: center">
-    <b>ps2-3-a-1</b><br><img src="output/ps2-3-a-1.png" width="250" alt="ps2-3-a-1">
+    <b>ps3-3-a-1</b><br><img src="output/ps3-3-a-1.png" width="250" alt="ps3-3-a-1">
     <figcaption><b>Traffic Signs: 'no entry', 'stop', 'construction'</b></figcaption>
 </figure>
 <figure style="text-align: center">
-    <b>ps2-3-a-2</b><br><img src="output/ps2-3-a-2.png" width="250" alt="ps2-3-a-2">
+    <b>ps3-3-a-2</b><br><img src="output/ps3-3-a-2.png" width="250" alt="ps3-3-a-2">
     <figcaption><b>Traffic Sign: 'traffic', 'no entry', 'stop', 'yield', 'construction', 'warning'</b></figcaption>
 </figure>
 
@@ -109,26 +109,26 @@ Adding an image to background video's frames. Match the image to the background 
 Nest a video in the video with AR markers.
 
 <figure style="text-align: center">
-    <b>ps2-5-a-1</b><br><img src="output/ps2-5-a-1.png" width="250" alt="ps2-5-a-1">
+    <b>ps3-5-a-1</b><br><img src="output/ps3-5-a-1.png" width="250" alt="ps3-5-a-1">
     <figcaption><b>Coordinates and Name: Warning: (242, 321)</b></figcaption>
 </figure>
 
 ---
 ### Challenge Problem: Tracking corners with ArUco Markers
-Given 'real world' images, find and label signs.
+Adding an image to background image's frames. Match the image to the background image's ArUco markers.
 
 <figure style="text-align: center">
-    <b>ps2-5-a-1</b><br><img src="output/ps2-5-a-1.png" width="250" alt="ps2-5-a-1">
+    <b>ps3-5-a-1</b><br><img src="output/ps3-5-a-1.png" width="250" alt="ps3-5-a-1">
     <figcaption><b>Coordinates and Name: Warning: (242, 321)</b></figcaption>
 </figure>
 
 <figure style="text-align: center">
-    <b>ps2-5-a-2</b><br><img src="output/ps2-5-a-2.png" width="250" alt="ps2-5-a-2">
+    <b>ps3-5-a-2</b><br><img src="output/ps3-5-a-2.png" width="250" alt="ps3-5-a-2">
     <figcaption><b>Coordinates and Name:No Entry: (286, 214)</b></figcaption>
 </figure>
 
 <figure style="text-align: center">
-    <b>ps2-5-a-3</b><br><img src="output/ps2-5-a-3.png" width="250" alt="ps2-5-a-3">
+    <b>ps3-5-a-3</b><br><img src="output/ps3-5-a-3.png" width="250" alt="ps3-5-a-3">
     <figcaption><b>Coordinates and Name:No Entry: (193, 211)</b></figcaption>
 </figure>
 
