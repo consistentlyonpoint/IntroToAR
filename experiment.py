@@ -43,7 +43,7 @@ def helper_for_part_4_and_5(video_name, fps, frame_ids, output_prefix,
 
     while image is not None:
 
-        print("Processing fame {}".format(frame_num))
+        # print("Processing fame {}".format(frame_num))
 
         markers = ps3.find_markers(image, template, True)
 
@@ -87,7 +87,7 @@ def helper_for_part_7(input_video, input_image, output_video, output_prefix, fra
     output_counter = 0
     while True:
         frame_num += 1
-        print("processing frame {}...".format(frame_num))
+        # print("processing frame {}...".format(frame_num))
 
         # grab the next frame from the video
         (grabbed, frame) = vs.read()
@@ -345,7 +345,7 @@ def part_6():
         # my image as advert
         my_src_points = ps3.get_corners_list(my_advert_image)
         # print("their image before the merge\n",their_image)
-        print("part 6 has started")
+        # print("part 6 has started")
         video_markers = ps3.find_markers(their_image, template, True)
         # merge video images
         homography = ps3.find_four_point_transform(my_src_points, video_markers)
@@ -354,7 +354,7 @@ def part_6():
         #
         # frame_id = frame_ids[int((output_counter - 1) // 3)]
         frame_id = frame_ids[(output_counter - 1) % 3]
-        print("frame id test, weird at 555: ", frame_id)
+        # print("frame id test, weird at 555: ", frame_id)
         if frame_num == frame_id:
             output_name_counter = 1
             out_str = output_prefix + "-{}.png".format(output_name_counter)
@@ -374,7 +374,7 @@ def part_6():
             my_advert_image = my_image_gen.__next__()
             # my image as advert
             my_src_points = ps3.get_corners_list(my_advert_image)
-        print("frames completetd: ", frame_num)
+        # print("frames completetd: ", frame_num)
         frame_num += 1
     video_out.release()
 
@@ -400,9 +400,9 @@ if __name__ == '__main__':
     # part_1()
     # part_2()
     # part_3()
-    part_4_a()
+    # part_4_a()
     # part_4_b()
     # part_5_a()
     # part_5_b()
     # part_6()
-    # part_7()
+    part_7()

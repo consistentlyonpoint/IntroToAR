@@ -19,10 +19,12 @@ Identify markers for Augmented Reality exercise
     <b>ps3-1-a-1</b><br><img src="output/ps3-1-a-1.png" width="250" alt="ps3-1-a-1">
     <figcaption><b>AR Coordinates</b></figcaption>
 </figure>
+
 <figure style="text-align: center">
     <b>ps3-1-a-2</b><br><img src="output/ps3-1-a-2.png" width="250" alt="ps3-1-a-2">
     <figcaption><b>AR Coordinates_2</b></figcaption>
 </figure>
+
 <figure style="text-align: center">
     <b>ps3-1-a-3</b><br><img src="output/ps3-1-a-3.png" width="250" alt="ps3-1-a-3">
     <figcaption><b>AR Coordinates - noisy</b></figcaption>
@@ -35,18 +37,22 @@ Identify markers in simulates scenes.
     <b>ps3-2-a-1</b><br><img src="output/ps3-2-a-1.png" width="250" alt="ps3-2-a-1">
     <figcaption><b>Marker Detection - Real Scene_1</b></figcaption>
 </figure>
+
 <figure style="text-align: center">
     <b>ps3-2-a-2</b><br><img src="output/ps3-2-a-2.png" width="250" alt="ps3-2-a-2">
     <figcaption><b>Marker Detection - Real Scene_2</b></figcaption>
 </figure>
+
 <figure style="text-align: center">
     <b>ps3-2-a-3</b><br><img src="output/ps3-2-a-3.png" width="250" alt="ps3-2-a-3">
     <figcaption><b>Marker Detection - Real Scene_3</b></figcaption>
 </figure>
+
 <figure style="text-align: center">
     <b>ps3-2-a-4</b><br><img src="output/ps3-2-a-4.png" width="250" alt="ps3-2-a-4">
     <figcaption><b>Marker Detection - Real Scene_4</b></figcaption>
 </figure>
+
 <figure style="text-align: center">
     <b>ps3-2-a-5</b><br><img src="output/ps3-2-a-5.png" width="250" alt="ps3-2-a-5">
     <figcaption><b>Marker Detection - Real Scene_5</b></figcaption>
@@ -71,10 +77,12 @@ Add the marketing image to background image. Match the marketing image to the ba
     <b>ps3-3-a-1</b><br><img src="output/ps3-3-a-1.png" width="250" alt="ps3-3-a-1">
     <figcaption><b>Norman Borlaug_1</b></figcaption>
 </figure>
+
 <figure style="text-align: center">
     <b>ps3-3-a-2</b><br><img src="output/ps3-3-a-2.png" width="250" alt="ps3-3-a-2">
     <figcaption><b>Norman Borlaug_2</b></figcaption>
 </figure>
+
 <figure style="text-align: center">
     <b>ps3-3-a-3</b><br><img src="output/ps3-3-a-3.png" width="250" alt="ps3-3-a-3">
     <figcaption><b>Norman Borlaug_3</b></figcaption>

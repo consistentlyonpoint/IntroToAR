@@ -44,6 +44,7 @@ def get_corners_list(image):
     # cv2.imshow('gettiing corners', image_copy)
     # print("shape of the image = ", image_copy.shape)
     if len(image_copy.shape) < 3:
+        # print(image_copy.shape)
         max_y = image_copy.shape[0]-1
         max_x = image_copy.shape[1]-1
         corners = [(0, 0), (0, max_y), (max_x, 0), (max_x, max_y)]
@@ -88,7 +89,7 @@ def find_markers(image, template=None, ishelper_for_part_4_and_5=None):
     # template_y_og = template_copy.shape[0]
     ## grayscale for canny, which is good for edges
     if ishelper_for_part_4_and_5:
-        print("running for video")
+        # print("running for video")
         match_search_results = []
         harris_search_results = []
         points2_match = []
@@ -183,7 +184,7 @@ def find_markers(image, template=None, ishelper_for_part_4_and_5=None):
                         template_y_best_harris = template_y
                         points2_harris = np.argwhere(search_harris >= thresh_harris)
                     if len(points2_harris) < 5:
-                        print("calling points match because len(points2_harris) = ",len(points2_harris))
+                        # print("calling points match because len(points2_harris) = ",len(points2_harris))
                         template_gray = cv2.cvtColor(template_size_rot, cv2.COLOR_BGR2GRAY)
                         # template_gray = cv2.cvtColor(template_size, cv2.COLOR_BGR2GRAY)
                         gauss_blur_template = cv2.GaussianBlur(template_gray, (7, 7), 0)  # (3,3),0) # (9,9),0)
@@ -243,45 +244,48 @@ def find_markers(image, template=None, ishelper_for_part_4_and_5=None):
         else:
             kmeans_tuple_harris = []
         if len(kmeans_tuple_harris) < 4:
-            points2_sort_match = sorted(points2_match, key=lambda x: x[0] + x[1])
-            points2_sort_copy_match = np.copy(points2_sort_match)
-            print("what is points 2 {} \n what is template x best {} "
-                  "\n what is template y best {}".format(points2_match,template_x_best_match,template_y_best_match))
-            points3_match = points2_sort_copy_match + [template_x_best_match // 2, template_y_best_match // 2]
-            x_match = points3_match[:, 1]
-            y_match = points3_match[:, 0]
-            # now for kmeans
-            xy_match = np.dstack((x_match, y_match))
-            XY_match = np.float32(xy_match[0])
-            # print("xy_match",xy_match)
-            N_match = 4
-            if len(XY_match) >= N_match:
-                criteria_match = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 10, 1.0)
-                ret_match, label_match, center_match = cv2.kmeans(XY_match, N_match, None, criteria_match
-                                                                  , 10, cv2.KMEANS_RANDOM_CENTERS)
-                # convert centers to ints
-                center_match = center_match.astype(int)
-                # ref_match_q1 = (0, 0)
-                ref_match_q1 = (image_x // 4, image_y // 4)
-                kmeans_sort_match_1 = sorted(center_match, key=lambda x: (x[0] - ref_match_q1[0]) ** 2
-                                                                         + (x[1] - ref_match_q1[1]) ** 2)
-                ref_match_q2 = (image_x // 4, (image_y // 2 + image_y // 4))
-                kmeans_sort_match_2 = sorted(center_match, key=lambda x: (x[0] - ref_match_q2[0]) ** 2
-                                                                         + (x[1] - ref_match_q2[1]) ** 2)
-                ref_match_q3 = ((image_x // 2 + image_x // 4), image_y // 4)
-                kmeans_sort_match_3 = sorted(center_match, key=lambda x: (x[0] - ref_match_q3[0]) ** 2
-                                                                         + (x[1] - ref_match_q3[1]) ** 2)
-                ref_match_q4 = ((image_x // 2 + image_x // 4), (image_y // 2 + image_y // 4))
-                kmeans_sort_match_4 = sorted(center_match, key=lambda x: (x[0] - ref_match_q4[0]) ** 2
-                                                                         + (x[1] - ref_match_q4[1]) ** 2)
-                kmeans_sort_match = np.vstack((kmeans_sort_match_1[0], kmeans_sort_match_2[0], kmeans_sort_match_3[0]
-                                               , kmeans_sort_match_4[0]))
-                kmeans_tuple_match = [tuple(b) for b in kmeans_sort_match]
-            target_location = kmeans_tuple_match
+            try:
+                points2_sort_match = sorted(points2_match, key=lambda x: x[0] + x[1])
+                points2_sort_copy_match = np.copy(points2_sort_match)
+                # print("what is points 2 {} \n what is template x best {} "
+                #       "\n what is template y best {}".format(points2_match,template_x_best_match,template_y_best_match))
+                points3_match = points2_sort_copy_match + [template_x_best_match // 2, template_y_best_match // 2]
+                x_match = points3_match[:, 1]
+                y_match = points3_match[:, 0]
+                # now for kmeans
+                xy_match = np.dstack((x_match, y_match))
+                XY_match = np.float32(xy_match[0])
+                # print("xy_match",xy_match)
+                N_match = 4
+                if len(XY_match) >= N_match:
+                    criteria_match = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 10, 1.0)
+                    ret_match, label_match, center_match = cv2.kmeans(XY_match, N_match, None, criteria_match
+                                                                      , 10, cv2.KMEANS_RANDOM_CENTERS)
+                    # convert centers to ints
+                    center_match = center_match.astype(int)
+                    # ref_match_q1 = (0, 0)
+                    ref_match_q1 = (image_x // 4, image_y // 4)
+                    kmeans_sort_match_1 = sorted(center_match, key=lambda x: (x[0] - ref_match_q1[0]) ** 2
+                                                                             + (x[1] - ref_match_q1[1]) ** 2)
+                    ref_match_q2 = (image_x // 4, (image_y // 2 + image_y // 4))
+                    kmeans_sort_match_2 = sorted(center_match, key=lambda x: (x[0] - ref_match_q2[0]) ** 2
+                                                                             + (x[1] - ref_match_q2[1]) ** 2)
+                    ref_match_q3 = ((image_x // 2 + image_x // 4), image_y // 4)
+                    kmeans_sort_match_3 = sorted(center_match, key=lambda x: (x[0] - ref_match_q3[0]) ** 2
+                                                                             + (x[1] - ref_match_q3[1]) ** 2)
+                    ref_match_q4 = ((image_x // 2 + image_x // 4), (image_y // 2 + image_y // 4))
+                    kmeans_sort_match_4 = sorted(center_match, key=lambda x: (x[0] - ref_match_q4[0]) ** 2
+                                                                             + (x[1] - ref_match_q4[1]) ** 2)
+                    kmeans_sort_match = np.vstack((kmeans_sort_match_1[0], kmeans_sort_match_2[0], kmeans_sort_match_3[0]
+                                                   , kmeans_sort_match_4[0]))
+                    kmeans_tuple_match = [tuple(b) for b in kmeans_sort_match]
+                target_location = kmeans_tuple_match
+            except Exception as e:
+                print("error when kmeans tuple harris len < 4\n", e)
         else:
             target_location = kmeans_tuple_harris
     else:
-        print("running for still")
+        # print("running for still")
         match_search_results = []
         harris_search_results = []
         points2_match = []
@@ -789,7 +793,11 @@ def project_imageA_onto_imageB(imageA, imageB, homography):
     # matrix_dest_index = np.array([reshape_dest_x, reshape_dest_y, np.ones_like(index_dest_x).reshape(-1)])
     matrix_dest_index = np.array([index_dest_x.ravel(), index_dest_y.ravel(), np.ones_like(index_dest_x).ravel()])
     map_dest_to_source_ind = H.dot(matrix_dest_index)
-    map_dest_to_source_x2, map_dest_to_source_y2 = map_dest_to_source_ind[:-1] / map_dest_to_source_ind[-1]
+    try:
+        map_dest_to_source_x2, map_dest_to_source_y2 = map_dest_to_source_ind[:-1] / map_dest_to_source_ind[-1]
+    except Exception as e:
+        print("map x2 and map y2 failed\n", e)
+        map_dest_to_source_x2, map_dest_to_source_y2 = 0
     map_dest_to_source_x2 = map_dest_to_source_x2.reshape(dest_image_y, dest_image_x).astype(np.float32)
     map_dest_to_source_y2 = map_dest_to_source_y2.reshape(dest_image_y, dest_image_x).astype(np.float32)
     # cv2.remap(src=src_image, map1=map_dest_to_source_x2, map2=map_dest_to_source_y2, interpolation=cv2.INTER_LINEAR  #, interpolation=cv2.INTER_LINEAR
@@ -944,10 +952,14 @@ def find_aruco_markers(image, aruco_dict=cv2.aruco.DICT_5X5_50):
     """
     # image_aruco = np.float32(np.copy(image))
     image_copy = np.copy(image)
-    aruco_dict = cv2.aruco.Dictionary_get(cv2.aruco.DICT_5X5_50)
+    # aruco_dict = cv2.aruco.Dictionary_get(cv2.aruco.DICT_5X5_50)
+    _dict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_5X5_50)
     # corners, ids, other = cv2.aruco.detectMarkers(image_copy, aruco_dict)
-    aruco_param = cv2.aruco.DetectorParameters_create()
-    corners2, ids2, other2 = cv2.aruco.detectMarkers(image=image_copy, dictionary=aruco_dict) #, parameters=aruco_param)
+    # aruco_param = cv2.aruco.DetectorParameters_create()
+    _params = cv2.aruco.DetectorParameters()
+    _detector = cv2.aruco.ArucoDetector(_dict, _params)
+    # corners2, ids2, other2 = cv2.aruco.detectMarkers(image=image_copy, dictionary=aruco_dict) #, parameters=aruco_param)
+    corners2, ids2, other2 = _detector.detectMarkers(image_copy)
     # print("what corners are there: \n {}, ids {}".format(corners2,ids2))
     # print("what ids are there: \n", ids2)
     # cv2.imshow('image',image_copy)
