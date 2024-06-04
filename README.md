@@ -74,7 +74,8 @@ I tried the techniques of inversing the homography and mapping from the destinat
 
 Add the marketing image to background image. Match the marketing image to the background image's AR points.
 <figure style="text-align: center">
-    <b>ps3-3-a-1</b><br><img src="output/ps3-3-a-1.png" width="250" alt="ps3-3-a-1"><br><b>Norman Borlaug_1</b>
+    <b>ps3-3-a-1</b><br><img src="output/ps3-3-a-1.png" width="250" alt="ps3-3-a-1">
+    <figcaption><br><b>Norman Borlaug_1</b></figcaption>
 </figure>
 
 <figure style="text-align: center">
