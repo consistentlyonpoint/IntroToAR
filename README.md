@@ -16,46 +16,39 @@ Corner detection; Perspective imaging; Projective geometry, Homographies, and Im
 ### Problem 1: Marker detection in a simulated scene
 Identify markers for Augmented Reality exercise
 <figure style="text-align: center">
-    <b>ps3-1-a-1</b><br><img src="output/ps3-1-a-1.png" width="250" alt="ps3-1-a-1">
-    <figcaption><b><br>AR Coordinates</b></figcaption>
+    <b>AR Coordinates_1</b><br><img src="output/ps3-1-a-1.png" width="250" alt="ps3-1-a-1">\
 </figure>
 
 <figure style="text-align: center">
-    <b>ps3-1-a-2</b><br><img src="output/ps3-1-a-2.png" width="250" alt="ps3-1-a-2">
-    <figcaption><b><br>AR Coordinates_2</b></figcaption>
+    <b>AR Coordinates_2</b><br><img src="output/ps3-1-a-2.png" width="250" alt="ps3-1-a-2">
 </figure>
 
 <figure style="text-align: center">
-    <b>ps3-1-a-3</b><br><img src="output/ps3-1-a-3.png" width="250" alt="ps3-1-a-3">
-    <figcaption><b><br>AR Coordinates - noisy</b></figcaption>
+    <b>AR Coordinates - noisy</b><br><img src="output/ps3-1-a-3.png" width="250" alt="ps3-1-a-3">
 </figure>
 
 ---
 ### Problem 2: Marker detection in a real scene
 Identify markers in simulates scenes.
 <figure style="text-align: center">
-    <b>ps3-2-a-1</b><br><img src="output/ps3-2-a-1.png" width="250" alt="ps3-2-a-1">
+    <b>ps3-2-a-1</b><img src="output/ps3-2-a-1.png" width="250" alt="ps3-2-a-1">
     <figcaption><b><br>Marker Detection - Real Scene_1</b></figcaption>
 </figure>
 
 <figure style="text-align: center">
-    <b>ps3-2-a-2</b><br><img src="output/ps3-2-a-2.png" width="250" alt="ps3-2-a-2">
-    <figcaption><b><br>Marker Detection - Real Scene_2</b></figcaption>
+    <b>Marker Detection - Real Scene_2</b><br><img src="output/ps3-2-a-2.png" width="250" alt="ps3-2-a-2">
 </figure>
 
 <figure style="text-align: center">
-    <b>ps3-2-a-3</b><br><img src="output/ps3-2-a-3.png" width="250" alt="ps3-2-a-3">
-    <figcaption><b><br>Marker Detection - Real Scene_3</b></figcaption>
+    <b>Marker Detection - Real Scene_3</b><br><img src="output/ps3-2-a-3.png" width="250" alt="ps3-2-a-3">
 </figure>
 
 <figure style="text-align: center">
-    <b>ps3-2-a-4</b><br><img src="output/ps3-2-a-4.png" width="250" alt="ps3-2-a-4">
-    <figcaption><b><br>Marker Detection - Real Scene_4</b></figcaption>
+    <b>Marker Detection - Real Scene_4</b><br><img src="output/ps3-2-a-4.png" width="250" alt="ps3-2-a-4">
 </figure>
 
 <figure style="text-align: center">
-    <b>ps3-2-a-5</b><br><img src="output/ps3-2-a-5.png" width="250" alt="ps3-2-a-5">
-    <figcaption><b><br>Marker Detection - Real Scene_5</b></figcaption>
+    <b>Marker Detection - Real Scene_5</b><br><img src="output/ps3-2-a-5.png" width="250" alt="ps3-2-a-5">
 </figure>
 
 ---
@@ -73,62 +66,52 @@ The office hours video stressed the benefit of using backward warping, so after 
 I tried the techniques of inversing the homography and mapping from the destination<br> to the source.
 
 Add the marketing image to background image. Match the marketing image to the background image's AR points.
+
 <figure style="text-align: center">
-    <b>ps3-3-a-1</b><br><img src="output/ps3-3-a-1.png" width="250" alt="ps3-3-a-1">
-    <figcaption><br><b>Norman Borlaug_1</b></figcaption>
+    <b>Norman Borlaug_1</b><br><img src="output/ps3-3-a-1.png" width="250" alt="ps3-3-a-1">
 </figure>
 
 <figure style="text-align: center">
-    <b>ps3-3-a-2</b><br><img src="output/ps3-3-a-2.png" width="250" alt="ps3-3-a-2">
-    <figcaption><br><b>Norman Borlaug_2</b></figcaption>
+    <b>Norman Borlaug_2</b><br><img src="output/ps3-3-a-2.png" width="250" alt="ps3-3-a-2">
 </figure>
 
 <figure style="text-align: center">
-    <b>ps3-3-a-3</b><br><img src="output/ps3-3-a-3.png" width="250" alt="ps3-3-a-3">
-    <figcaption><br><b>Norman Borlaug_3</b></figcaption>
+    <b>Norman Borlaug_3</b><br><img src="output/ps3-3-a-3.png" width="250" alt="ps3-3-a-3">
 </figure>
 
 ---
 ### Problem 4: Finding markers in a video
 Identify AR markers in the frames of a video.
 <figure style="text-align: center">
-    <b>ps3-4-a-1</b><br><img src="output/ps3-4-a-1.png" width="250" alt="ps3-4-a-1">
-    <figcaption><br><b>Marker Detection - Real Video_1</b></figcaption>
+    <b>Marker Detection - Real Video_1</b><br><img src="output/ps3-4-a-1.png" width="250" alt="ps3-4-a-1">
 </figure>
 <figure style="text-align: center">
-    <b>ps3-4-a-6</b><br><img src="output/ps3-4-a-6.png" width="250" alt="ps3-4-a-6">
-    <figcaption><br><b>Marker Detection - Real Video_6</b></figcaption>
+    <b>Marker Detection - Real Video_6</b><br><img src="output/ps3-4-a-6.png" width="250" alt="ps3-4-a-6">
 </figure>
 
 Identify AR markers in the frames of a noisy video.
 <figure style="text-align: center">
-    <b>ps3-4-b-2</b><br><img src="output/ps3-4-b-2.png" width="250" alt="ps3-4-b-2">
-    <figcaption><b>Marker Detection - Noisy-Real Video_2</b></figcaption>
+    <b>Marker Detection - Noisy-Real Video_2</b><br><img src="output/ps3-4-b-2.png" width="250" alt="ps3-4-b-2">
 </figure>
 <figure style="text-align: center">
-    <b>ps3-4-b-3</b><br><img src="output/ps3-4-b-3.png" width="250" alt="ps3-4-b-3">
-    <figcaption><b>Marker Detection - Noisy-Real Scene_3</b></figcaption>
+    <b>Marker Detection - Noisy-Real Scene_3</b><br><img src="output/ps3-4-b-3.png" width="250" alt="ps3-4-b-3">
 </figure>
 
 ---
 ### Problem 5: Final Augmented Reality
 Adding an image to background video's frames. Match the image to the background video's AR points.
 <figure style="text-align: center">
-    <b>ps3-5-a-2</b><br><img src="output/ps3-5-a-2.png" width="250" alt="ps3-5-a-2">
-    <figcaption><b>Image Projection onto Real Video_2</b></figcaption>
+    <b>Image Projection onto Real Video_2</b><br><img src="output/ps3-5-a-2.png" width="250" alt="ps3-5-a-2">
 </figure>
 <figure style="text-align: center">
-    <b>ps3-5-a-4</b><br><img src="output/ps3-5-a-4.png" width="250" alt="ps3-5-a-4">
-    <figcaption><b>Image Projection onto Real Video_4</b></figcaption>
+    <b>Image Projection onto Real Video_4</b><br><img src="output/ps3-5-a-4.png" width="250" alt="ps3-5-a-4">
 </figure>
 
 <figure style="text-align: center">
-    <b>ps3-5-b-2</b><br><img src="output/ps3-5-b-2.png" width="250" alt="ps3-5-b-2">
-    <figcaption><b>Image Projection onto Noisy-Real Video_2</b></figcaption>
+    <b>Image Projection onto Noisy-Real Video_2</b><br><img src="output/ps3-5-b-2.png" width="250" alt="ps3-5-b-2">
 </figure>
 <figure style="text-align: center">
-    <b>ps3-5-b-3</b><br><img src="output/ps3-5-b-3.png" width="250" alt="ps3-5-b-3">
-    <figcaption><b>Image Projection onto Noisy-Real Video_3</b></figcaption>
+    <b>Image Projection onto Noisy-Real Video_3</b><br><img src="output/ps3-5-b-3.png" width="250" alt="ps3-5-b-3">
 </figure>
 
 ---
@@ -136,8 +119,7 @@ Adding an image to background video's frames. Match the image to the background 
 Nest a video in the video with AR markers.
 
 <figure style="text-align: center">
-    <b>ps3-6-a-1</b><br><img src="output/ps3-6-a-1.png" width="250" alt="ps3-6-a-1">
-    <figcaption><b>Nested Video in Video</b></figcaption>
+    <b>Nested Video in Video</b><br><img src="output/ps3-6-a-1.png" width="250" alt="ps3-6-a-1">
 </figure>
 
 ---
