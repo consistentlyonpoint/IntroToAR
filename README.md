@@ -90,26 +90,45 @@ Add the marketing image to background image. Match the marketing image to the ba
 
 ---
 ### Problem 4: Finding markers in a video
-Identify AR markers in the frames of videos.
+Identify AR markers in the frames of a video.
 <figure style="text-align: center">
-    <b>ps3-3-a-1</b><br><img src="output/ps3-3-a-1.png" width="250" alt="ps3-3-a-1">
-    <figcaption><b>Traffic Signs: 'no entry', 'stop', 'construction'</b></figcaption>
+    <b>ps3-4-a-1</b><br><img src="output/ps3-4-a-1.png" width="250" alt="ps3-4-a-1">
+    <figcaption><b>Marker Detection - Real Video_1</b></figcaption>
 </figure>
 <figure style="text-align: center">
-    <b>ps3-3-a-2</b><br><img src="output/ps3-3-a-2.png" width="250" alt="ps3-3-a-2">
-    <figcaption><b>Traffic Sign: 'traffic', 'no entry', 'stop', 'yield', 'construction', 'warning'</b></figcaption>
+    <b>ps3-4-a-6</b><br><img src="output/ps3-4-a-6.png" width="250" alt="ps3-4-a-6">
+    <figcaption><b>Marker Detection - Real Video_6</b></figcaption>
+</figure>
+
+Identify AR markers in the frames of a noisy video.
+<figure style="text-align: center">
+    <b>ps3-4-b-2</b><br><img src="output/ps3-4-b-2.png" width="250" alt="ps3-4-b-2">
+    <figcaption><b>Marker Detection - Noisy-Real Video_2</b></figcaption>
+</figure>
+<figure style="text-align: center">
+    <b>ps3-4-b-3</b><br><img src="output/ps3-4-b-3.png" width="250" alt="ps3-4-b-3">
+    <figcaption><b>Marker Detection - Noisy-Real Scene_3</b></figcaption>
 </figure>
 
 ---
 ### Problem 5: Final Augmented Reality
 Adding an image to background video's frames. Match the image to the background video's AR points.
 <figure style="text-align: center">
-    <b>ps3-3-a-1</b><br><img src="output/ps3-3-a-1.png" width="250" alt="ps3-3-a-1">
-    <figcaption><b>Traffic Signs: 'no entry', 'stop', 'construction'</b></figcaption>
+    <b>ps3-5-a-2</b><br><img src="output/ps3-5-a-2.png" width="250" alt="ps3-5-a-2">
+    <figcaption><b>Image Projection onto Real Video_2</b></figcaption>
 </figure>
 <figure style="text-align: center">
-    <b>ps3-3-a-2</b><br><img src="output/ps3-3-a-2.png" width="250" alt="ps3-3-a-2">
-    <figcaption><b>Traffic Sign: 'traffic', 'no entry', 'stop', 'yield', 'construction', 'warning'</b></figcaption>
+    <b>ps3-5-a-4</b><br><img src="output/ps3-5-a-4.png" width="250" alt="ps3-5-a-4">
+    <figcaption><b>Image Projection onto Real Video_4</b></figcaption>
+</figure>
+
+<figure style="text-align: center">
+    <b>ps3-5-b-2</b><br><img src="output/ps3-5-b-2.png" width="250" alt="ps3-5-b-2">
+    <figcaption><b>Image Projection onto Noisy-Real Video_2</b></figcaption>
+</figure>
+<figure style="text-align: center">
+    <b>ps3-5-b-3</b><br><img src="output/ps3-5-b-3.png" width="250" alt="ps3-5-b-3">
+    <figcaption><b>Image Projection onto Noisy-Real Video_3</b></figcaption>
 </figure>
 
 ---
@@ -117,26 +136,13 @@ Adding an image to background video's frames. Match the image to the background 
 Nest a video in the video with AR markers.
 
 <figure style="text-align: center">
-    <b>ps3-5-a-1</b><br><img src="output/ps3-5-a-1.png" width="250" alt="ps3-5-a-1">
-    <figcaption><b>Coordinates and Name: Warning: (242, 321)</b></figcaption>
+    <b>ps3-6-a-1</b><br><img src="output/ps3-6-a-1.png" width="250" alt="ps3-6-a-1">
+    <figcaption><b>Nested Video in Video</b></figcaption>
 </figure>
 
 ---
 ### Challenge Problem: Tracking corners with ArUco Markers
 Adding an image to background image's frames. Match the image to the background image's ArUco markers.
 
-<figure style="text-align: center">
-    <b>ps3-5-a-1</b><br><img src="output/ps3-5-a-1.png" width="250" alt="ps3-5-a-1">
-    <figcaption><b>Coordinates and Name: Warning: (242, 321)</b></figcaption>
-</figure>
-
-<figure style="text-align: center">
-    <b>ps3-5-a-2</b><br><img src="output/ps3-5-a-2.png" width="250" alt="ps3-5-a-2">
-    <figcaption><b>Coordinates and Name:No Entry: (286, 214)</b></figcaption>
-</figure>
-
-<figure style="text-align: center">
-    <b>ps3-5-a-3</b><br><img src="output/ps3-5-a-3.png" width="250" alt="ps3-5-a-3">
-    <figcaption><b>Coordinates and Name:No Entry: (193, 211)</b></figcaption>
-</figure>
+[Cookie in ArUco](output/ps3-7-out.mp4)
 

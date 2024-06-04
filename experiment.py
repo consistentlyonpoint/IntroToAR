@@ -361,8 +361,8 @@ def part_6():
             save_image(out_str, their_image)
             output_counter += 4
             output_name_counter += 1
-            if frame_id < 725:
-                print("output_counter: ",output_counter)
+            # if frame_id < 725:
+            #     print("output_counter: ",output_counter)
         #
         video_out.write(their_image)
         my_advert_image = my_image_gen.__next__()
@@ -404,5 +404,5 @@ if __name__ == '__main__':
     # part_4_b()
     # part_5_a()
     # part_5_b()
-    # part_6()
-    part_7()
+    part_6()
+    # part_7()
