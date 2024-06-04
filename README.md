@@ -17,17 +17,17 @@ Corner detection; Perspective imaging; Projective geometry, Homographies, and Im
 Identify markers for Augmented Reality exercise
 <figure style="text-align: center">
     <b>ps3-1-a-1</b><br><img src="output/ps3-1-a-1.png" width="250" alt="ps3-1-a-1">
-    <figcaption><b>AR Coordinates</b></figcaption>
+    <figcaption><b><br>AR Coordinates</b></figcaption>
 </figure>
 
 <figure style="text-align: center">
     <b>ps3-1-a-2</b><br><img src="output/ps3-1-a-2.png" width="250" alt="ps3-1-a-2">
-    <figcaption><b>AR Coordinates_2</b></figcaption>
+    <figcaption><b><br>AR Coordinates_2</b></figcaption>
 </figure>
 
 <figure style="text-align: center">
     <b>ps3-1-a-3</b><br><img src="output/ps3-1-a-3.png" width="250" alt="ps3-1-a-3">
-    <figcaption><b>AR Coordinates - noisy</b></figcaption>
+    <figcaption><b><br>AR Coordinates - noisy</b></figcaption>
 </figure>
 
 ---
@@ -35,27 +35,27 @@ Identify markers for Augmented Reality exercise
 Identify markers in simulates scenes.
 <figure style="text-align: center">
     <b>ps3-2-a-1</b><br><img src="output/ps3-2-a-1.png" width="250" alt="ps3-2-a-1">
-    <figcaption><b>Marker Detection - Real Scene_1</b></figcaption>
+    <figcaption><b><br>Marker Detection - Real Scene_1</b></figcaption>
 </figure>
 
 <figure style="text-align: center">
     <b>ps3-2-a-2</b><br><img src="output/ps3-2-a-2.png" width="250" alt="ps3-2-a-2">
-    <figcaption><b>Marker Detection - Real Scene_2</b></figcaption>
+    <figcaption><b><br>Marker Detection - Real Scene_2</b></figcaption>
 </figure>
 
 <figure style="text-align: center">
     <b>ps3-2-a-3</b><br><img src="output/ps3-2-a-3.png" width="250" alt="ps3-2-a-3">
-    <figcaption><b>Marker Detection - Real Scene_3</b></figcaption>
+    <figcaption><b><br>Marker Detection - Real Scene_3</b></figcaption>
 </figure>
 
 <figure style="text-align: center">
     <b>ps3-2-a-4</b><br><img src="output/ps3-2-a-4.png" width="250" alt="ps3-2-a-4">
-    <figcaption><b>Marker Detection - Real Scene_4</b></figcaption>
+    <figcaption><b><br>Marker Detection - Real Scene_4</b></figcaption>
 </figure>
 
 <figure style="text-align: center">
     <b>ps3-2-a-5</b><br><img src="output/ps3-2-a-5.png" width="250" alt="ps3-2-a-5">
-    <figcaption><b>Marker Detection - Real Scene_5</b></figcaption>
+    <figcaption><b><br>Marker Detection - Real Scene_5</b></figcaption>
 </figure>
 
 ---
@@ -74,18 +74,17 @@ I tried the techniques of inversing the homography and mapping from the destinat
 
 Add the marketing image to background image. Match the marketing image to the background image's AR points.
 <figure style="text-align: center">
-    <b>ps3-3-a-1</b><br><img src="output/ps3-3-a-1.png" width="250" alt="ps3-3-a-1">
-    <figcaption><b>Norman Borlaug_1</b></figcaption>
+    <b>ps3-3-a-1</b><br><img src="output/ps3-3-a-1.png" width="250" alt="ps3-3-a-1"><br><b>Norman Borlaug_1</b>
 </figure>
 
 <figure style="text-align: center">
     <b>ps3-3-a-2</b><br><img src="output/ps3-3-a-2.png" width="250" alt="ps3-3-a-2">
-    <figcaption><b>Norman Borlaug_2</b></figcaption>
+    <figcaption><br><b>Norman Borlaug_2</b></figcaption>
 </figure>
 
 <figure style="text-align: center">
     <b>ps3-3-a-3</b><br><img src="output/ps3-3-a-3.png" width="250" alt="ps3-3-a-3">
-    <figcaption><b>Norman Borlaug_3</b></figcaption>
+    <figcaption><br><b>Norman Borlaug_3</b></figcaption>
 </figure>
 
 ---
@@ -93,11 +92,11 @@ Add the marketing image to background image. Match the marketing image to the ba
 Identify AR markers in the frames of a video.
 <figure style="text-align: center">
     <b>ps3-4-a-1</b><br><img src="output/ps3-4-a-1.png" width="250" alt="ps3-4-a-1">
-    <figcaption><b>Marker Detection - Real Video_1</b></figcaption>
+    <figcaption><br><b>Marker Detection - Real Video_1</b></figcaption>
 </figure>
 <figure style="text-align: center">
     <b>ps3-4-a-6</b><br><img src="output/ps3-4-a-6.png" width="250" alt="ps3-4-a-6">
-    <figcaption><b>Marker Detection - Real Video_6</b></figcaption>
+    <figcaption><br><b>Marker Detection - Real Video_6</b></figcaption>
 </figure>
 
 Identify AR markers in the frames of a noisy video.
@@ -144,5 +143,4 @@ Nest a video in the video with AR markers.
 ### Challenge Problem: Tracking corners with ArUco Markers
 Adding an image to background image's frames. Match the image to the background image's ArUco markers.
 
-[Cookie in ArUco](output/ps3-7-out.mp4)
-
+[//]: # ([Cookie in ArUco]&#40;output/ps3-7-out.mp4&#41;)
